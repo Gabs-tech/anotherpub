@@ -34,7 +34,7 @@ pipeline{
         } 
         stage("user input"){
             steps{
-                inputs("continue?")
+                input("continue?")
             }
         }   
          
