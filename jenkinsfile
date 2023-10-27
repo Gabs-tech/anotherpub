@@ -21,7 +21,12 @@ pipeline{
             steps{
                 echo "fourth job"
             }
-        }  
+        } 
+            stage("my fifth stage"){
+            steps{
+                echo "fifth job"
+            }
+        }   
     }
     
 }
