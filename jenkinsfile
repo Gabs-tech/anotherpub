@@ -1,0 +1,27 @@
+pipeline{
+    agent any
+    
+    stages{
+        stage("my 1st stage"){
+            steps{
+                echo "========executing A========"
+            }
+           
+        }
+        stage("my second syage"){
+        steps{
+            echo "testing this now "
+        }}
+        stage("my third stage"){
+            steps{
+                echo "another job"
+            }
+        }
+       stage("my fourth stage"){
+            steps{
+                echo "fourth job"
+            }
+        }  
+    }
+    
+}
