@@ -31,7 +31,12 @@ pipeline{
             steps{
                 echo "sixth job"
             }
-        }    
+        } 
+        stage("user input"){
+            steps{
+                inputs("continue?")
+            }
+        }   
          
     }
     
